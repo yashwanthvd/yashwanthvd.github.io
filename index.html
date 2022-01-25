@@ -70,7 +70,6 @@
             position: fixed;
             top: 50px;
             left: 50%;
-            transform: translateX(-50%);
         }
     </style>
     <script type='text/javascript' src='//embarrasschill.com/4d/0d/ee/4d0deec603a214a4a489d74a827317b9.js'></script>
@@ -78,12 +77,11 @@
 
 <body>
     <div class="di">
-        <a href="/temp.html">temp page</a>
-        <a href="https://embarrasschill.com/frskxwtiy5?key=99ed8242c40ca9b1bf5198e01de0aa9f">get ad</a>
-        <a href="https://embarrasschill.com/imnfxjiu?key=afeeccb87ca8c665fd867acd95f132c1">get ad</a>
-        <a href="https://embarrasschill.com/wuv86j9i34?key=8d59e96fa291b4518f32dfcfe5a73f41">get ad</a>
-        <a href="https://embarrasschill.com/hg8srvmgh?key=20bd8f90b85977c9deb10216b335e798">get ad</a>
-        <a href="https://embarrasschill.com/mkfzc7rc8?key=92df6be19f61a643c5cfc7735f048fb6">get ad</a>
+        <a class="directlinks" href="https://embarrasschill.com/frskxwtiy5?key=99ed8242c40ca9b1bf5198e01de0aa9f">get ad</a>
+        <a class="directlinks" href="https://embarrasschill.com/imnfxjiu?key=afeeccb87ca8c665fd867acd95f132c1">get ad</a>
+        <a class="directlinks" href="https://embarrasschill.com/wuv86j9i34?key=8d59e96fa291b4518f32dfcfe5a73f41">get ad</a>
+        <a class="directlinks" href="https://embarrasschill.com/hg8srvmgh?key=20bd8f90b85977c9deb10216b335e798">get ad</a>
+        <a class="directlinks" href="https://embarrasschill.com/mkfzc7rc8?key=92df6be19f61a643c5cfc7735f048fb6">get ad</a>
     </div>
     <div class="all">
         <div class="left">
@@ -251,11 +249,17 @@
     <button onclick="cli();"
         style="position: fixed;top:0%;left:0;width:100px;height:40px;z-index:1000000000">start</button>
     <script>
+        setTimeout(function() { cli(); }, 10000);
         function cli() {
-            document.querySelectorAll(".container-1fe1cd691be6ddffcc749d27364ea449__link")[0].click()
-            document.querySelectorAll(".container-1fe1cd691be6ddffcc749d27364ea449__link")[1].click()
-            document.querySelectorAll(".container-1fe1cd691be6ddffcc749d27364ea449__link")[2].click()
-            document.querySelectorAll(".container-1fe1cd691be6ddffcc749d27364ea449__link")[3].click()
+            var directlinks = document.querySelectorAll(".directlinks");
+            for(var i = 0; i<directlinks.length; i++) {
+                directlinks[i].click();
+            }
+            
+            var nativebanner = document.querySelectorAll(".container-b1948643c7171ba1658f66d5e491240b__link")
+            for(var i = 0; i<nativebanner.length; i++) {
+                nativebanner[i].click();
+            }
 
             var frame1 = document.querySelectorAll("iframe")[0];
             var frame2 = document.querySelectorAll("iframe")[1];
@@ -264,20 +268,12 @@
             var frame5 = document.querySelectorAll("iframe")[4];
             var frame6 = document.querySelectorAll("iframe")[5];
 
-            frame1.contentWindow.document.querySelector("#atLink-3cbe66e029f1d131eb099a47ab482928").click();
-            frame2.contentWindow.document.querySelector("#atLink-48d4647be3346b78dd6e7298c704ce24").click();
-            frame3.contentWindow.document.querySelector("#atLink-c4ba211c1852a69d157a431912911188").click();
-            frame4.contentWindow.document.querySelector("#atLink-99167aa70492f99f5397a3b9ce7cb0b5").click();
-            frame5.contentWindow.document.querySelector("#atLink-e908eb6c735adf585a78dcd0952e2703").click();
-            frame6.contentWindow.document.querySelector("#atLink-30a2654d19f86ce19286955bacb127f8").click();
-
-
-            //  document.querySelectorAll("iframe")[0].contentWindow.document.querySelector(
-            //    "#atLink-3cbe66e029f1d131eb099a47ab482928").click();
-            //    document.querySelectorAll("iframe")[1].contentWindow.document.querySelector(
-            //          "#atLink-99167aa70492f99f5397a3b9ce7cb0b5").click();
-            //        document.querySelectorAll("iframe")[2].contentWindow.document.querySelector(
-            //  "#atLink-99167aa70492f99f5397a3b9ce7cb0b5").click();
+            frame1.contentWindow.document.querySelector("#atLink-4efd8a89f14cba6ce97db75bedccaf85").click();
+            frame2.contentWindow.document.querySelector("#atLink-c82e904250e12ab84e2f0e0a33197018").click();
+            frame3.contentWindow.document.querySelector("#atLink-1fca557baed23000b5794a24e27787a7").click();
+            frame4.contentWindow.document.querySelector("#atLink-fc3ef974dbb04784c12e9140bb0e4b22").click();
+            frame5.contentWindow.document.querySelector("#atLink-da5124a2b905a2e4138bdc2dc4c2d90f").click();
+            frame6.contentWindow.document.querySelector("#atLink-150e56955e5a639a65bf8d4570d8e28d").click();
         }
     </script>
 
